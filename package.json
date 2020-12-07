@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cwedwards9/budget-tracker.git"
+    "url": "git+https://github.com/morrow7564/BudgetTracker"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cwedwards9/budget-tracker/issues"
+    "url": "https://github.com/morrow7564/BudgetTracker/issues"
   },
-  "homepage": "https://github.com/cwedwards9/budget-tracker#readme",
+  "homepage": "https://github.com/morrow7564/BudgetTracker/blob/main/README.md",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
