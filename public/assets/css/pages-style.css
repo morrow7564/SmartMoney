@@ -1,0 +1,642 @@
+/*=====  TofC  ======/
+1. Main 
+2. Nav
+3. Money Section Top Bar
+4. Landing Page
+5. Budget and Transaction Pages
+6. Loans Page
+7. Loans Logos - Bottom
+8. Footer
+9. Scroll button
+10. Error page
+
+
+/*=====  Main  ======*/
+
+body {
+  background-color: #f7f7f7;
+}
+
+p {
+  color: #4e4e4e;
+  font-family: "Roboto", sans-serif;
+}
+
+h5 {
+  font-size: 16px;
+  color: #4e4e4e;
+}
+
+h6 {
+  font-size: 9px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4e4e4e;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  line-height: 1.23;
+}
+
+hr {
+  margin-bottom: 0px;
+}
+
+.section-space--inner--60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-space--inner--60 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  }
+  @media only screen and (max-width: 767px) {
+  .section-space--inner--60 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  }
+
+  .section-space-outer-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+.col-md-8 {
+  padding:0px;        
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  color: #4e4e4e;
+}
+
+select {
+  outline: none;
+}
+
+/*=====  Main  ======*/
+
+
+/*=====  Navbar  ======*/
+
+.nav-link:hover {
+  text-decoration: none;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  padding-bottom: 1px;
+  }
+  
+  .navbar {
+  box-shadow: 1px 1px 18px #868686;
+  width: 100%;
+  background-color: white;
+  border: 0px ;
+  }
+  
+  .nav-link {
+  color: #1f6197;
+  }
+  
+  .nav-item{
+   padding-left: 20px;
+   
+  }
+  .button.navbar-toggler {
+  color: #163D5B;
+  }
+  
+  .navbar-toggler-icon {
+   color: #163D5B;
+   }
+   
+  .button.navbar-toggler-icon {
+     color: #163D5B;
+     }
+  
+  .header-btn {
+  background-color: #163D5B;
+  color: white;
+  border-radius: 20px;
+  margin-left: 10px;
+  border: 0px;
+  font-size: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  outline: none;
+  }
+  
+  .header-btn:hover {
+  background-color: #E65139;
+  outline: none;
+    }
+  /*=====  End of navbar  ======*/
+
+
+
+  /*=====  Money section - Top  ======*/
+  #budgetModalBtn {
+    margin-left: 5px;
+    background-color: transparent;
+    color: #163D5B;
+    top: 53px;
+    justify-content: flex-end;
+    border: none;
+    outline: none;
+  }
+  
+  #budgetModalBtn:hover {
+    color: #E65139;
+    border: none;
+    outline: none;
+  }
+  
+  #userName {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    color: #4e4e4e;
+  }
+  #userNum {
+    font-size: 16px;
+    color: #4e4e4e;
+  }
+  
+  .monthlyTotals {
+    background-color: white;
+    border: none;
+    border-radius: 1em;
+    padding: 20px; 
+    box-shadow: 0px 0px 6px #dddddd;
+  }
+  
+  #amountSpent, #monthlyBudget {
+    color: #4e4e4e;
+    font-size: 45px;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  #remainingBalance {
+    color: #38A99E;
+    font-size: 45px;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif;
+  }
+    /*=====  End  Money section - Top  ======*/
+
+
+
+
+  /*=====  Landing Page  ======*/
+  .card {
+    background-color: white;
+    border-radius: 1em;
+    padding: 20px; 
+    box-shadow: 0px 0px 6px #dddddd;
+    margin-bottom: 50px;
+  }
+  
+  .transaction-card {
+  border-bottom: 15px solid #163D5B;
+  }
+  
+  .bill-pay-card {
+  border-bottom: 15px solid #38A99E;
+  }
+  
+  .loan-card {
+  border-bottom: 15px solid #E65139;
+  }
+  
+  .service-card-icon {
+  text-align: center;
+  }
+  
+  .fa-calculator, .fa-money-bill-alt, .fa-piggy-bank {
+  font-size: 40px;
+  }
+  
+  .card:hover {
+  transform:scale(1.04);
+  text-decoration: none;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+    /*=====  End Landing Page  ======*/
+
+
+ /*=====  Budget and Transaction Pages  ======*/
+ #transactionSection {
+  background-color: white;
+  border-left: 15px solid #163D5B;
+  border-radius: 1em;
+  padding: 20px;
+  box-shadow: 0px 0px 6px #DDDDDD;
+  margin-bottom: 20px;
+}
+#billSection {
+  background-color: white;
+  border-left: 15px solid #38A99E;
+  border-radius: 1em;
+  padding: 20px;
+  box-shadow: 0px 0px 6px #DDDDDD;
+  margin-bottom: 20px;
+}
+
+.transactionChart {
+  background-color: white;
+  border: none;
+  border-radius: 1em;
+  padding: 20px; 
+  box-shadow: 0px 0px 6px #dddddd;
+  margin: 0px;
+  border-left: 15px solid #E65139;
+}
+
+input {
+background-color: #e0e0e0;
+border: none;
+border-radius: 2em;
+padding: 6px;
+margin: 5px;
+outline: none;
+}
+
+button{
+color: white;
+background-color: #163D5B;
+padding: 6px;
+border-radius: 2em;
+border: none;
+}
+
+#tCategory {
+border: none;
+border-radius: 2em;
+background-color: #e0e0e0;
+color: #4e4e4e;
+font-family: "Roboto", sans-serif;
+padding: 8px;
+}
+
+#tDate {
+  color: #4e4e4e;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+}
+
+td, th {
+  border: none;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#donutchart {
+  padding: 0px;
+}
+
+a:hover {
+text-decoration: none;
+}
+
+.fa-trash-alt:hover {
+color: #E65139;
+cursor: pointer;
+}
+/*=====  End Budget and Transaction Pages  ======*/
+
+
+ /*=====  Loans Page  ======*/
+ .loanList {
+  background-color: white;
+  border: none;
+  border-radius: 1em;
+  padding: 20px; 
+  padding-bottom: 50px;
+  box-shadow: 0px 0px 6px #dddddd;
+  margin: 0px;
+  border-left: 15px solid #E65139;
+  }
+
+  #loansSection {
+    background-color: white;
+    border-left: 15px solid #E65139;
+    border-radius: 1em;
+    padding: 35px;
+    box-shadow: 0px 0px 6px #DDDDDD;
+    margin-bottom: 20px;
+    }
+
+ /*=====  End Loans Page  ======*/
+
+
+
+/*=====  Loans Logos  ======*/
+.loan-icons {
+  color: white;
+  font-size: 60px;
+  padding: 1em;
+  text-align: center;
+}
+.btn-primary {
+  border: 0px;
+  background-color: transparent;
+  width: 125px;
+  outline: none;
+}
+.logo {
+  opacity: 0.3;
+}
+.logo:hover {
+  opacity: 1.0;
+}
+/*=====  end loans logo area  ======*/
+
+
+  /*=============================================
+=            footer area           =
+=============================================*/
+
+.footer-area {
+  background-color: #f7f7f7;
+  }
+  .footer-logo {
+  margin-bottom: 15px;
+  }
+  .footer-logo--style2 {
+  margin-bottom: 170px;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
+  .footer-logo--style2 {
+    margin-bottom: 50px;
+  }
+  }
+  
+  .footer-desc {
+  color: #303030;
+  max-width: 370px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-intro-wrapper {
+    margin-bottom: 40px;
+  }
+  }
+  @media only screen and (max-width: 767px) {
+  .footer-intro-wrapper {
+    margin-bottom: 30px;
+  }
+  }
+  
+  @media only screen and (max-width: 767px) {
+  .footer-widget-wrapper {
+    margin-bottom: -30px;
+  }
+  }
+  
+  @media only screen and (max-width: 767px) {
+  .footer-widget {
+    margin-bottom: 30px;
+  }
+  }
+  .footer-widget__title {
+  color: #303030;
+  margin-bottom: 20px;
+  font-size: 18px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
+  .footer-widget__title {
+    margin-bottom: 20px;
+  }
+  }
+  .footer-widget__title--black {
+  color: #222;
+  }
+  .footer-widget__navigation {
+  line-height: 1;
+  }
+  .footer-widget__navigation li {
+  padding: 0;
+  line-height: 1;
+  }
+  .footer-widget__navigation li:first-child {
+  padding-top: 0;
+  }
+  .footer-widget__navigation li:last-child {
+  padding-bottom: 0;
+  }
+  .footer-widget__navigation li a {
+  font-size: 14px;
+  color: #303030;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  line-height: 2;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  }
+  .footer-widget__navigation li a:hover {
+  color: #f0542d;
+  }
+  .footer-widget__content {
+  color: #303030;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  }
+  .footer-widget__content .contact-details li span {
+  margin-right: 10px;
+  }
+  
+  .footer-copyright-wrapper {
+  padding: 15px 0;
+  color: white;
+  background-color: #303030;
+  border-top: 1px solid white;
+  font-size: 12px;
+  }
+  
+  /*=====  End of footer  ======*/
+
+  /*=============================================
+=            scroll top            =
+=============================================*/
+a.scroll-top {
+  position: fixed;
+  right: 30px;
+  bottom: -60px;
+  z-index: 999;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
+  display: block;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  
+  color: #ffffff;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  @media only screen and (max-width: 479px) {
+  a.scroll-top {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+  }
+  }
+  a.scroll-top.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 60px;
+  }
+    
+/*=====  End of scroll top  ======*/
+
+
+
+/*=====  Calendar Start  ======*/
+#calendar{
+  position: relative;
+  right:2.5em;
+
+}
+
+.cld-main{
+  width: 330px;
+}
+.cld-main a{
+  color: #38A99E;
+  font-weight: bold;
+}
+  .cld-datetime{
+    position: relative;
+    width: 66%;
+    min-width: 100px;
+    max-width: 300px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .cld-datetime .today{
+    position: relative;
+    float: left;
+    width: calc(100% - 40px);
+    margin: auto;
+    text-align: center;
+  }
+  .cld-nav{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+  }
+  .cld-nav:hover{
+    cursor: pointer;
+  }
+  .cld-nav:hover svg{
+      fill: #38A99E;
+  }
+  .cld-rwd{
+    float: left;
+  }
+  .cld-fwd{
+    float: right;
+  }
+.cld-labels, .cld-days{
+  padding-left: 0;
+}
+  .cld-label, .cld-day{
+    display: inline-block;
+    width: 14.28%;
+    text-align: center;
+  }
+  .cld-day.today .cld-number{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background: #38A99E;
+    color: #fff;
+  }
+  .cld-day.disableDay{
+    opacity: 0.5;
+  }
+  .cld-day.nextMonth, .cld-day.prevMonth{
+    opacity: 0.33;
+  }
+    .cld-number{
+      position: relative;
+      margin: 5px;
+      padding: 5px;
+    }
+      .cld-title{
+        position: absolute;
+        z-index: 5;
+        display: none;
+        top: 30px;
+        left: 0;
+        padding: 5px 10px;
+        background: #fff;
+        white-space: nowrap;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+      .cld-number:hover .cld-title{
+        display: block;
+      }
+      .cld-title::before{
+        content: '';
+        position: absolute;
+        top: -7.5px; left: 7.5px;
+        width: 0;
+        height: 0;
+        border-left: 7.5px solid transparent;
+        border-right: 7.5px solid transparent;
+
+        border-bottom: 7.5px solid #ccc;
+      }
+      .cld-number.eventday{
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        border-radius: 50px;
+        border: 1px solid #999;
+      }
+      .cld-number.eventday:hover{
+        cursor: pointer;
+        background: #eee;
+      }
+      .today .cld-number.eventday:hover{
+        background: #38A99E;
+      }
+/* end calendar */

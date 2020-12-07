@@ -1,0 +1,98 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-lignt">
+    <div class="container">
+        <a class="navbar-brand" href="/user/{{user.dataValues.id}}">
+            <img src="/assets/images/SmartMoneyLogoOne.png" width="250" alt="Smart Money logo with man wearing glasses">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/user/transactions/{{user.dataValues.id}}">Transactions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/user/bills/{{user.dataValues.id}}">Bill Pay</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/user/loans/{{user.dataValues.id}}">Loans</a>
+                </li>
+            </ul>
+        </div>
+        <hr />
+        <div class="my-2 my-lg-0">
+            <a href="/"><button class="button header-btn">Log Out</button></a>
+        </div>
+    </div>
+</nav>
+
+<main class="container">
+
+    <p id="userName">Welcome {{user.dataValues.f_name}} {{user.dataValues.l_name}}</p>
+    <p id="userNum">#00000<span id="userid">{{user.dataValues.id}}</span></p>
+
+    <section class="monthlyTotals">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Monthly Budget</h5>
+                    <hr><span class="dollarSign">$ </span><span id="monthlyBudget">{{user.dataValues.budget}}</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="container section-space-outer-20">
+        <div class="row ">
+            <div class="col-md-8 d-flex">
+                <div class="col-md-12" id="loansSection">
+                    <div class="row">
+                        <h3><i class="fas fa-home"></i> Need a loan? </h3>
+                        <p>Simply fill out the loan information to see how much your payments will be each month.</p>
+                        <hr>
+                        <div class="col-md-6" id="enterDataLoan">
+                            <p style="margin-bottom: 0px;">Amount ($)</p>
+                            <input id="amount">
+                            <p style="margin-bottom: 0px;">Interest (%)</p>
+                            <input id="apr">
+                            <p style="margin-bottom: 0px;">Length (years)</p>
+                            <input id="years">
+                            <br>
+                            <br>
+                            <button onclick="calculate();">Calculate</button>  
+                        </div>
+
+                        <div class="col-md-6" id="enterDataLoan">
+                            <div id="approxPay">
+                                <h3>Approximate Payments</h3>
+                                <p style="margin-bottom: 0px;">Monthly payment</p>
+                                <h3 style="color: #38A99E;">$<span class="output" id="payment"></span></h3>
+                                <p style="margin-bottom: 0px;">Total payment</p>
+                                <h3 style="color: #38A99E;">$<span class="output" id="total"></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="col-md-4 d-flex">
+                <div class="col-md-12 ml-auto loanList ">
+                    <h3>Bad credit?</h3>
+                    <p>Below are some helpful credit monitoring sites for you to use to make sure you get approved when you're ready to make a new purchase.</p>
+                    <div class="logo">
+                        <a href="https://www.experian.com/"><img src="/assets/images/experian.png" width="120"></a>
+                    </div>
+                    <div class="logo">
+                        <a href="https://www.transunion.com/"><img src="/assets/images/transunion.png"
+                                width="120"></a>
+                    </div>
+                    <div class="logo">
+                        <a href="https://www.equifax.com/personal/"><img src="/assets/images/equifax.png" width="120" ;> </a>
+                    </div>
+                    <div class="logo">
+                        <a href="https://www.creditkarma.com/"><img src="/assets/images/credit-karma-logo.png" width="120"
+                                ;></a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+</main>
